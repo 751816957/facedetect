@@ -1,4 +1,3 @@
-
 #include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -21,6 +20,7 @@ using namespace cv;
 #define FRAME_HEIGHT 480
 #define	SEG_SIZE	((size_t)FRAME_WIDTH*FRAME_HEIGHT*3*sizeof(int)*2)		/* size of segment	*/
 union semun { int val ; struct semid_ds *buf ; ushort *array; };
+
 
 // yuv
 struct Picture
